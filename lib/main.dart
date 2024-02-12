@@ -4,6 +4,7 @@ import 'package:college_project/splash_screen/splashscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:oktoast/oktoast.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
             visualDensity: VisualDensity.adaptivePlatformDensity,
           ),
           //home: HomePage(),
-              home: HomePage (),
+              home: OKToast(child: SplashScreen()),
         ),
       );}
     );

@@ -15,7 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
       Navigator.pushAndRemoveUntil(
         context,
         MaterialPageRoute(
-          builder: (context) => Startpage(),
+          builder: (context) => SecondPage(),
         ),
         (Route<dynamic> route) => false,
       );
@@ -27,7 +27,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0xffE7ECEF),
          body:BuildContainer(),
         ),
 
@@ -67,13 +67,13 @@ class _SplashScreenState extends State<SplashScreen> {
           ),
         ),
         //420.verticalSpace,
-        Container(
-          height: 420.h,
-          width: double.infinity,
-          //color: Colors.red,
-          child: Image.asset( "assets/images/flag.jpg",
-          scale: 1.spMax,),
-        )
+        // Container(
+        //   height: 420.h,
+        //   width: double.infinity,
+        //   //color: Colors.red,
+        //   child: Image.asset( "assets/images/flag.jpg",
+        //   scale: 1.spMax,),
+        // )
       ],
     );
   }
